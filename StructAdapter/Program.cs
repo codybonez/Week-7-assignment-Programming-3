@@ -1,10 +1,18 @@
-﻿namespace StructAdapter
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace StructAdapter
 {
-    internal class Program
+    internal class Program : Adapter
     {
+    
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+           
+        }
+
+        public void UsbAtoC()
+        {
+            Console.WriteLine("Charger is now using usb c");
         }
     }
 }
