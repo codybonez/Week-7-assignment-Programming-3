@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace StructAdapter
 {
-    public interface IUsbC
+    public interface IOverideUSB
     {
-        public void UsbAtoC();
+        public void OverideUsb();
     }
 }

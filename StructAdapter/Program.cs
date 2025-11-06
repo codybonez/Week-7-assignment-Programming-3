@@ -2,17 +2,17 @@
 
 namespace StructAdapter
 {
-    internal class Program : IUsbC
+    internal class Program
     {
     
         static void Main(string[] args)
         {
-           
+             UsbA usbA = new UsbA();
+            IOverideUSB overideUSB = new PhoneCharger();
+            overideUSB.OverideUsb();
+     
         }
 
-        public void UsbAtoC()
-        {
-            Console.WriteLine("Charger is now using usb c");
-        }
+     
     }
 }
