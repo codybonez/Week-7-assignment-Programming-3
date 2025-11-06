@@ -2,7 +2,7 @@
 
 namespace StructAdapter
 {
-    internal class Program : IAdapter
+    internal class Program : IUsbC
     {
     
         static void Main(string[] args)

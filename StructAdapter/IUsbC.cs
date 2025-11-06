@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StructAdapter
 {
-    public interface IAdapter
+    public interface IUsbC
     {
         public void UsbAtoC();
     }
