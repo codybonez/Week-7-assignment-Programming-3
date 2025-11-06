@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace StructAdapter
 {
-    public class UsbA
+    public class UsbType
     {
-        public void Usb() {
-
-            Console.WriteLine("This uses usb c. This will not work.");
+        public string UsbTypeAorC()
+        {
+            return("This is using usb c, but we have a usb a charger.");
         }
     }
 }

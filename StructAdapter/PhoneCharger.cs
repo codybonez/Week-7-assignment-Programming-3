@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace StructAdapter
 {
-    public class PhoneCharger :IOverideUSB
+    public class PhoneCharger :IAdapter
     {
-     private  PhoneCharger _phoneCharger;
-        public PhoneCharger() {
-            Console.WriteLine("The phone uses usb A");
-        }
+        private  UsbType _type;
+        public PhoneCharger(UsbType usbType) {
+             _type = usbType;
+        
 
-        public void OverideUsb()
+            
+        }
+        
+
+        public string OverideUsb()
         {
-            Console.WriteLine($"The charger is now compatible with usb C");
+            return$"We now have usb C charger to use for this phone";
         }
     }
 }

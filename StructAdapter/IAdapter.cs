@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace StructAdapter
 {
-    public interface IOverideUSB
+    public interface IAdapter
     {
-        public void OverideUsb();
+        public string OverideUsb();
     }
 }
